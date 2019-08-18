@@ -1,0 +1,38 @@
+{
+  "name": "Back To Top",
+  "description": "Back To Top extensions",
+  "version": "1.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_icon": "icons/backToTop.png",
+    "default_title": "back to top"
+  },
+  "icons": {
+    "16": "icons/backToTop.png",
+    "32": "icons/backToTop.png",
+    "48": "icons/backToTop.png",
+    "128": "icons/backToTop.png"
+  },
+  "permissions": [
+    "tabs", "storage", "contextMenus"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["js/content.js"],
+      "css": ["css/content.css"]
+    }
+  ],
+  "web_accessible_resources": ["icons/backToTop.png"],
+  "chrome_url_overrides": {
+    "newtab": "newTab.html"
+  },
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": false
+  },
+  "omnibox": {
+    "keyword": "js"
+  }
+}

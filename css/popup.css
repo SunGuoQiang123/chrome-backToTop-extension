@@ -1,0 +1,53 @@
+html, body, h2 {
+  margin: 0;
+  padding: 0;
+}
+
+#back-top-app {
+  padding: 10px 10px;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.option-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.option-item input {
+  width: 120px;
+  margin-left: 8px;
+}
+
+.ce-btt-container {
+  cursor: pointer;
+  z-index: 1000000;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  transition: .3s all ease-in-out;
+}
+
+.back-to-up-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 50px;
+}
+
+.ce-btt-icon {
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+  transition: .3s all ease-in-out;
+}
+.ce-btt-icon:hover {
+  opacity: 1;
+}
+
+.error {
+  color: red;
+  margin-left: 54px;
+  height: 20px;
+}

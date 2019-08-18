@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>chrome extensions</title>
+  <link rel="stylesheet" href="css/popup.css">
+</head>
+<body>
+  <div id="back-top-app">
+    <h2 class="title">参数</h2>
+    <div class="option-item">
+      <label for="right">
+        right:
+      </label>
+      <input type="text" id="right" value="">
+    </div>
+    <div class="error-msg1 error"></div>
+    <div class="option-item">
+      <label for="bottom">
+        bottom:
+      </label>
+      <input type="text" id="bottom" value="">
+    </div>
+    <div class="error-msg2 error"></div>
+    <div class="option-item">
+      <label for="file">
+        icon:
+      </label>
+      <input type="file" id="file" accept=".jpg, .jpeg, .png">
+    </div>
+    <div class="img-err error"></div>
+    <div class="preview-icon">
+      <img src="icons/backToTop.png" alt="back icon" class="back-to-up-icon" data-uploaded="false">
+    </div>
+    <button id="btn">保存</button>
+  </div>
+  <script src="js/popup.js"></script>
+</body>
+</html>

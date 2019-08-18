@@ -1,0 +1,19 @@
+.ce-btt-container {
+  cursor: pointer;
+  z-index: 1000000;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  transition: .3s all ease-in-out;
+}
+
+.ce-btt-icon {
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+  transition: .3s all ease-in-out;
+}
+
+.ce-btt-icon:hover {
+  opacity: 1;
+}
